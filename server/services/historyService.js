@@ -134,14 +134,14 @@ class HistoryService extends BaseService {
   }
 
   fetchCurrentTransferSummary() {
-    if (this.pollTimeout != null) {
-      clearTimeout(this.pollTimeout);
-    }
+   // if (this.pollTimeout != null) {
+     // clearTimeout(this.pollTimeout);
+    //}
 
-    this.services.clientGatewayService
-      .fetchTransferSummary(transferSummaryMethodCallConfig)
-      .then(this.handleFetchTransferSummarySuccess.bind(this))
-      .catch(this.handleFetchTransferSummaryError.bind(this));
+    //this.services.clientGatewayService
+      //.fetchTransferSummary(transferSummaryMethodCallConfig)
+      //.then(this.handleFetchTransferSummarySuccess.bind(this))
+      //.catch(this.handleFetchTransferSummaryError.bind(this));
   }
 
   getTransferSummary() {
